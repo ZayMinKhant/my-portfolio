@@ -1,0 +1,124 @@
+nav{
+    padding-top: 2px;
+    background-color: #613d0070;
+    z-index: 1000;
+
+}
+#name{
+    padding: 0;
+    font-size: 2.5rem;
+    color: #FFEDD8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+}
+
+.navbar div{
+    color: #3f23054b ;
+    font-size: 1.5rem;
+}
+
+
+//  animation center
+
+.namebutton {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .namebutton {
+    --border-right: 3px;
+    --text-stroke-color:white;
+    --animation-color: white;
+    --fs-size: 2.5em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid 3F2305;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .namebutton:hover .hover-text {
+    padding: 0;
+    width: 101%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+
+
+
+
+
+.navbutton {
+    position: relative;
+    text-align: center;
+    font-family: poppins;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    // background-color:#3f2305da;
+    border: none;
+    transition: color .2s linear,
+          box-shadow .3s linear,
+          background-color .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .navbutton:focus,
+  .navbutton:hover {
+    box-shadow: 0 0 90px #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #111;
+    // font-weight: 500;
+  }
+  
+  .navbutton:focus:before,
+  .navbutton:hover:before,
+  .navbutton:focus:after,
+  .navbutton:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .navbutton:before,
+  .navbutton:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width, left, 250ms cubic-bezier(0.25, .8, .25, 1);
+  }
+  
+  .navbutton:before {
+    top: -2px;
+  }
+  
+  .navbutton:after {
+    bottom: -2px;
+  }
