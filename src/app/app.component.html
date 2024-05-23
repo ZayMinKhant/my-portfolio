@@ -4,14 +4,15 @@
   <div class="bg bg3"></div>
   
   <router-outlet>
-    <div class="flex flex-row justify-between">
-      <div class="min-w-fit">
+    <div class="flex flex-col justify-between">
+      <!-- <div class="min-w-fit"> -->
         <app-home class="sticky top-0 left-0 z-50 "></app-home>
 
-      </div>
+      <!-- </div> -->
       <div class="flex flex-col static right-0 top-0 items-center">
-        <app-about-myself></app-about-myself>
-        <app-about-myself></app-about-myself>
+        <app-about-myself id="home"></app-about-myself>
+        <app-experiences class="w-full"></app-experiences>
+        
       </div>
 
     </div>

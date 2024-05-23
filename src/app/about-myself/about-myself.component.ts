@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-about-myself',
   templateUrl: './about-myself.component.html',
